@@ -30,7 +30,7 @@ This repo is the official PyTorch implementation of ADHGMDA: **Adaptive Dynamic 
 
 </div>
 <div align=center>
-<img src="figure/Figure-1.png" width="1080">
+<img src="figure/Figure-1.png" width="800">
 </div>
 
 
@@ -154,7 +154,7 @@ biodata.save_AScores('./{data_name}_AScores.emb')
 ## Visualization 🏆🏆🏆 
 
 <div align="center">
-  <img src="figure/Figure-3.jpg" alt="Netorks Visualization" width="500"/>
+  <img src="figure/Figure-3.jpg" alt="Netorks Visualization" width="800"/>
   <br>
 </div>
 ----------
