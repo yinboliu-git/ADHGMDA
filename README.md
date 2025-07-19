@@ -107,7 +107,9 @@ biodata = BioData(datapath.md,
                     dss_list=datapath.dd,
                     device=device,
                     data_name=data_names[data_id])
+```
 
+```
 # training model
 results, model = train_model(biodata)
 # visualize
@@ -122,6 +124,8 @@ biodata.set_rna_name(mirna_names)
 biodata.set_disease_name(disease_names)
 disease_df.head()
 
+```
+```
 # miRNA-Disease Association Network
 top_20_mirna_names2 = biodata.get_top_mirnas_for_multiple_diseases(['nonpapillary renal cell carcinoma', 'fg syndrome'])
 fig = biodata.visualize_mirna_disease_graph(top_20_mirna_names2)
@@ -135,6 +139,8 @@ fig = biodata.visualize_disease_disease_graph(top_20_mirna_names2)
 fig.savefig(f"./{data_name}_disease_disease.png", dpi=300, bbox_inches='tight')  # 保存为PNG格式，300DPI
 fig.show()
 
+```
+```
 # save socres
 biodata.save_AScores('./{data_name}_AScores.emb')
 ```
@@ -142,12 +148,8 @@ biodata.save_AScores('./{data_name}_AScores.emb')
 ## Visualization 🏆🏆🏆 
 
 <div align="center">
-  <img src="figure/Figure-3.jpg" alt="364-day Temperature Forecast Evolution" width="500"/>
-  
+  <img src="figure/Figure-3.jpg" alt="Netorks Visualization" width="500"/>
   <br>
-
-  <em>Figure: Dynamic evolution of predicted (red) versus observed (blue) global average temperatures over one year (365 days). 
-  <br>Shaded region shows the absolute difference between prediction and observation.</em>
 </div>
 ----------
 
