@@ -157,7 +157,7 @@ biodata.save_AScores('./{data_name}_AScores.emb')
   <img src="figure/Figure-3.jpg" alt="Netorks Visualization" width="800"/>
   <br>
 </div>
-----------
+
 
 ## Citation
 
