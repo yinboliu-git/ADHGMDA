@@ -108,10 +108,13 @@ biodata = BioData(datapath.md,
                     device=device,
                     data_name=data_names[data_id])
 ```
-
+Training model
 ```
 # training model
 results, model = train_model(biodata)
+```
+Data of Visualization
+```
 # visualize
 data_name = data_names[data_id]
 mirna_df = pd.read_excel('./data/HMDDv4.0/mirna_names.xlsx', header=None)
@@ -125,7 +128,9 @@ biodata.set_disease_name(disease_names)
 disease_df.head()
 
 ```
-```
+
+Network Visualization
+``` 
 # miRNA-Disease Association Network
 top_20_mirna_names2 = biodata.get_top_mirnas_for_multiple_diseases(['nonpapillary renal cell carcinoma', 'fg syndrome'])
 fig = biodata.visualize_mirna_disease_graph(top_20_mirna_names2)
@@ -140,6 +145,7 @@ fig.savefig(f"./{data_name}_disease_disease.png", dpi=300, bbox_inches='tight') 
 fig.show()
 
 ```
+Save socres
 ```
 # save socres
 biodata.save_AScores('./{data_name}_AScores.emb')
