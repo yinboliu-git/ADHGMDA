@@ -427,7 +427,7 @@ class BioData():
                 self_loop_dst = torch.arange(self.num_nodes).to(self.device)
                 self.graph.add_edges(self_loop_src, self_loop_dst)
                 neg_beta = self.config.neg_beta
-                neg_beta = neg_beta + 0.2
+                neg_beta = neg_beta + 1e-8
                 self.x_encode, self.edge_and_label = get_y_data(self.adj_matrix, mm_list=m_encoding_list, dd_list=d_encoding_list,
                                                                 x_encoding=x_encoding, neg_beta=neg_beta)
                 self.graph.edata['old_type'] = self.graph.edata['type'].clone()
@@ -448,7 +448,7 @@ class BioData():
          x_encoding) =  self._predata
         if neg_beta is None:
             neg_beta = self.config.neg_beta
-        neg_beta = neg_beta + 0.02 # used BPRloss
+        neg_beta = neg_beta + 1e-8 # used BPRloss
         self.x_encode, self.edge_and_label = get_y_data(md, mm_list=m_encoding_list, dd_list=d_encoding_list, x_encoding=x_encoding, neg_beta=neg_beta)
         self.graph.edata['old_type'] = self.graph.edata['type'].clone()
         self.config.get_data_params(self)
