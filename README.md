@@ -16,7 +16,7 @@ This repo is the official PyTorch implementation of ADHGMDA: **Adaptive Dynamic 
 [🆕News](docs/en/changelog.md)
 
 ## News 🚀🚀🚀
-- `2025/07/19`: We have uploaded the [data](https://pan.baidu.com/s/1cvG7di4_BvasOhjt0rPn0w?pwd=kx38) of ADHGMDA.
+- `2025/07/20`: We have uploaded the [data](https://doi.org/10.5281/zenodo.16215413) of ADHGMDA.
 - `2025/07/19`: We have updated the code of ADHGMDA.
 
 
