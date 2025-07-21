@@ -30,7 +30,7 @@ This repo is the official PyTorch implementation of ADHGMDA: **Adaptive Dynamic 
 
 </div>
 <div align=center>
-<img src="figure/Figure-1.png" width="800">
+<img src="figure/Figure-1.jpg" width="800">
 </div>
 
 
