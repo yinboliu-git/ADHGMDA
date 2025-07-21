@@ -41,7 +41,7 @@ This repo is the official PyTorch implementation of ADHGMDA: **Adaptive Dynamic 
 #### 🤖 Environment installation
 
 ```bash
-conda env create -f environment.yml
+bash env.sh
 ```
 
 ####  ✨ Run the train code
