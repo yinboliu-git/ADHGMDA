@@ -156,7 +156,7 @@ def train_model(biodata, train_idx=None, test_idx=None, save_file=None, Val_test
     monitor.print_metrics(f'Number of edges: {biodata.adj_matrix.sum()}')
     auc_name.extend(param.search_args['arg_name'])
     auc_name += ['loss', 'epoch']
-    results = pd.DataFrame(np.array(auc_list), columns=auc_name)
+    results = pd.DataFrame(np.array(auc_list,dtype=object), columns=auc_name)
     results.to_feather(path=save_file + '/results.feather')
     model.load_model(path=save_file + '/best_model.pth')
     model.Overall_Refactoring_ASS_Embedding(biodata)
