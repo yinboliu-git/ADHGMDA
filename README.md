@@ -11,7 +11,7 @@ This repo is the official PyTorch implementation of ADHGMDA: **Adaptive Dynamic 
 </p>
 
 [📘Documentation](https://xxx/) |
-[🛠️Installation](docs/en/install.md) |
+[🛠️Installation](https://github.com/yinboliu-git/ADHGMDA/tree/main?tab=readme-ov-file#-environment-installation) |
 [👀Visualization](https:/xxx/) |
 [🆕News](docs/en/changelog.md)
 
