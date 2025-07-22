@@ -133,12 +133,12 @@ def train_model(biodata, train_idx=None, test_idx=None, save_file=None, Val_test
                 auc = roc_auc_score(val_y_true, val_out_pred)
                 print('Val AUC:', auc)
                 if auc > model.best_auc:
-                    _patience += 1
+                    _patience = 0
                     model.best_auc = auc
                     model.best_epoch = epoch
                     model.save_model(path=save_file + '/best_model.pth')
                 else:
-                    _patience = 0
+                    _patience += 1
                 if _patience >= param.patience:
                     break
                 preds = model.predict(rep[src_test], rep[tgt_test])
